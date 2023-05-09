@@ -127,6 +127,8 @@ The model with the RandomOverSampler improved overall the recognition of the Hig
 
 Loans with High-Risk originally had a much smaller sample set. Using the RandomOverSampler aids the improvement of the True-Negatives but doesn't dramatically improve the False-Positive or False Negative performance. If possible, more High-Risk data should be sourced.
 
+The models can be used at the company discretion. The worst case scenario would be to incorrectly classify a High-Risk loan as healthy. As mentioned above, it would be desirable to have more samples of High-Risk loans to improve the overall performance of the model.
+
 
 ## Submission
 
