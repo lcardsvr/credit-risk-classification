@@ -61,14 +61,15 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 #### General scores Learning model 1:
 
-Training Data Score: 0.9921240885954051
-Testing Data Score: 0.9918489475856377
-Accuracy Score: 0.9918489475856377
+- Training Data Score: 0.9921240885954051
+- Testing Data Score: 0.9918489475856377
+- Accuracy Score: 0.9918489475856377
 
 #### Confusion matrix model 1:
 
-array([[18663,   102],
-       [   56,   563]], dtype=int64)
+|18663|   102|
+|--- | ---|
+|56|563|
 
 
 #### Metrics Learning model 1:
@@ -92,25 +93,25 @@ The total model accuracy 99.18%.
 
 #### General scores Learning model 2:
 
-Training Data Score: 0.9947308560359688
-Testing Data Score: 0.9938093272802311
-Accuracy Score: 0.9938093272802311
+- Training Data Score: 0.9947308560359688
+- Testing Data Score: 0.9938093272802311
+- Accuracy Score: 0.9938093272802311
 
 #### Confusion matrix model 2:
 
-array([[18649,   116],
-       [    4,   615]], dtype=int64)
+|18649|   116|
+|--- | ---|
+|4|   615|
 
 #### Metrics Learning model 2:
 
-                precision    recall  f1-score   support
-
-  Healthy Loan       1.00      0.99      1.00     18765
-High-Risk Loan       0.84      0.99      0.91       619
-
-      accuracy                           0.99     19384
-     macro avg       0.92      0.99      0.95     19384
-  weighted avg       0.99      0.99      0.99     19384
+| ---|               precision   | recall  | f1-score  | support |
+|----|---------      | ----------|----     | ---       |
+|Healthy Loan       |1.00      |0.99|      |1.00 |    18765|
+|High-Risk Loan |      0.84     | 0.99     | 0.91 |     619|
+| accuracy |---|-----|                0.99  |   19384|
+|macro avg |     0.92   |   0.99 |     0.95  |   19384|
+| weighted avg|       0.99 |     0.99 |     0.99 |    19384|
 
 The model correctly classified Healthy loans as Healthy all the times. A Healthy loan was incorrectly classified as High Risk only 1% of the time. High-Risk loans were incorrectly classified as Healthy 16% of the times. High Risk Loans were correctly classified as High-Risk 99% of the times. 
 
