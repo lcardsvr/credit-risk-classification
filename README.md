@@ -84,7 +84,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 The model correctly classified Healthy loans as Healthy all the times. A Healthy loan was incorrectly classified as High Risk only 1% of the time. High-Risk loans were incorrectly classified as Healthy 15% of the times. High Risk Loans were correctly classified as High-Risk 91% of the times. 
 
-The total model accuracy 99.18%. 
+The total model accuracy is 99.18%. 
 
 
 ### Machine Learning Model 2:
@@ -115,7 +115,7 @@ The total model accuracy 99.18%.
 
 The model correctly classified Healthy loans as Healthy all the times. A Healthy loan was incorrectly classified as High Risk only 1% of the time. High-Risk loans were incorrectly classified as Healthy 16% of the times. High Risk Loans were correctly classified as High-Risk 99% of the times. 
 
-The total model accuracy 99.38%. 
+The total model accuracy is 99.38%. 
 
 Adjusting the imbalance improved the model's capability to correctly label the high risk loans
 
