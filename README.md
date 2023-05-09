@@ -73,14 +73,16 @@ array([[18663,   102],
 
 #### Metrics Learning model 1:
 
-                precision    recall  f1-score   support
+| ---|               precision   | recall  | f1-score  | support |
 
-  Healthy Loan       1.00      0.99      1.00     18765
-High-Risk Loan       0.85      0.91      0.88       619
+|----|---------| ----------|---- | ---|
 
-      accuracy                           0.99     19384
-     macro avg       0.92      0.95      0.94     19384
-  weighted avg       0.99      0.99      0.99     19384
+|  Healthy Loan |      1.00  |    0.99 |     1.00 |    18765|
+|High-Risk Loan  |     0.85  |    0.91  |    0.88 |      619|
+
+ |     accuracy   |---|-----|               0.99   |  19384 |
+ |    macro avg |      0.92|      0.95|      0.94|     19384 |
+ | weighted avg |      0.99 |     0.99  |    0.99  |   19384|
 
 The model correctly classified Healthy loans as Healthy all the times. A Healthy loan was incorrectly classified as High Risk only 1% of the time. High-Risk loans were incorrectly classified as Healthy 15% of the times. High Risk Loans were correctly classified as High-Risk 91% of the times. 
 
@@ -121,8 +123,15 @@ Adjusting the imbalance improved the model's capability to correctly label the h
 
 ## Summary
 
-Summarise the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+The performance of the two models is similar accuracywise with an accuracy of 99.18% for the first model and 99.38% for the second.
 
-If you do not recommend any of the models, please justify your reasoning.
+The model with the RandomOverSampler improved overall the recognition of the High-Risk as High-Risk from 91% to 99%. The false negatives and false positives in both models are very similar. 
+
+Loans with High-Risk originally had a much smaller sample set. Using the RandomOverSampler aids the improvement of the True-Negatives but doesn't dramatically improve the False-Positive or False Negative performance. If possible, more High-Risk data should be sourced.
+
+
+## Submission
+
+1. Model summaries and general information submitted and available in GitHub under https://github.com/lcardsvr/credit-risk-classification
+
+2. Jupyter Notebook available in GitHub under https://github.com/lcardsvr/credit-risk-classification/blob/main/Credit_Risk/credit_risk_classification.ipynb
